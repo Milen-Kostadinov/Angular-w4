@@ -1,0 +1,28 @@
+.wrapper{
+    position: absolute;
+    bottom: 10%;
+    left: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: aqua;
+}
+.circle{
+    display: block;
+    margin: 10px;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 100%;
+}
+.green-light{
+    background-color: green;
+}
+.red-light{
+    background-color: red;
+}
+.yellow-light{
+    background-color: yellow;
+}
+.test{
+    opacity: 20%;
+}

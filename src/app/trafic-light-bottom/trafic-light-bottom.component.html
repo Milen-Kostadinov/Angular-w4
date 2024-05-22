@@ -1,0 +1,23 @@
+<div class="wrapper">
+<button [disabled]="this.trafficLightSttatus == 'red'" (click)="CheckIfLightIsYellow()">Пресичане</button>
+    <div>{{warning}}</div>
+    @if (this.trafficLightSttatus == "green" || this.trafficLightSttatus == "") {        
+        <div style="opacity: 100%;" class="green-light circle"></div>
+    }
+    @else {
+        <div style="opacity: 20%;" class="green-light circle"></div>
+    }
+    @if (this.trafficLightSttatus == "yellow-to-green" || this.trafficLightSttatus == "yellow-to-red" || this.trafficLightSttatus == "yellow") {        
+        <div style="opacity: 100%;" class="yellow-light circle"></div>
+    }
+    @else {
+        <div style="opacity: 20%;"class="yellow-light circle"></div>
+    }
+    @if (this.trafficLightSttatus == "red") {        
+        <div style="opacity: 100%;" class="red-light circle"></div>
+    }
+    @else {
+        <div style="opacity: 20%;" class="red-light circle"></div>
+    }
+</div>
+<button (click)="startSimulation()">Започни симулацията</button>
